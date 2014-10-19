@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :time_logs
+
+  resources :projects
+
   devise_for :users, controllers: {
     :omniauth_callbacks => "users/omniauth_callbacks"
   }
