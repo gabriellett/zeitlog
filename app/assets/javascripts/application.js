@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require bootstrap
+//= require scrollReveal.js/scrollReveal.js
 //= require_tree ./pages
 //= require zeitlog
