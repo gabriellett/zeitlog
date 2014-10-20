@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap_form'
+gem "font-awesome-rails"
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
