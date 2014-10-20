@@ -3,16 +3,13 @@ class TimeLogsController < ApplicationController
 
   def index
     @time_logs = TimeLog.all
-    respond_with(@time_logs)
   end
 
   def show
-    respond_with(@time_log)
   end
 
   def new
     @time_log = TimeLog.new
-    respond_with(@time_log)
   end
 
   def edit
@@ -21,17 +18,14 @@ class TimeLogsController < ApplicationController
   def create
     @time_log = TimeLog.new(time_log_params)
     @time_log.save
-    respond_with(@time_log)
   end
 
   def update
     @time_log.update(time_log_params)
-    respond_with(@time_log)
   end
 
   def destroy
     @time_log.destroy
-    respond_with(@time_log)
   end
 
   private
