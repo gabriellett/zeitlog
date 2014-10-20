@@ -1,4 +1,5 @@
-<%= form_for(@time_log) do |f| %>
+<%= bootstrap_form_for(@time_log) do |f| %>
+
   <% if @time_log.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@time_log.errors.count, "error") %> prohibited this time_log from being saved:</h2>
@@ -11,19 +12,30 @@
     </div>
   <% end %>
 
-  <div class="field">
+<div class="container" data-step="1">
+  <h2>
     <%= f.label :project_id %><br>
+    What did you work on?</h2>
+  <div class="field">
     <%= f.text_field :project_id %>
   </div>
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.text_field :user_id %>
-  </div>
-  <div class="field">
+
+</div>
+
+<div class="container" data-step="2">
+  <h2>
     <%= f.label :hours %><br>
+    How much time have you spent on it?</h2>
+  <div class="field">
     <%= f.number_field :hours %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+<div class="container" data-step="2">
+  <h2>and when have you done that?</h2>
+
+</div>
+
+<div class="actions">
+  <%= f.submit %>
+</div>
 <% end %>

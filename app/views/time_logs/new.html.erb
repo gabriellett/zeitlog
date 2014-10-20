@@ -1,4 +1,11 @@
-<h1>New time_log</h1>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<div class="container" data-step="0" data-sr="enter top">
+  <h1><%= t ".welcome" %> </h1>
+  <p>Let's start logging some hours of hard work shall we?</p>
+  <%= fa_icon "plus-circle", class: "fa-5x add-hour-sign", data: { link_step: 1} %>
+</div>
 
 <%= render 'form' %>
 

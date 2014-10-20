@@ -24,3 +24,6 @@ en:
     sessions:
       new:
         login_with_google: "Login with Google"
+  time_logs:
+    new:
+      welcome: Welcome to Zeitlog!
